@@ -4,6 +4,7 @@ import App from './app/App';
 import './main.scss';
 
 /**
- * ReactDOM.render: Renders App to index html file
+ * ReactDOM.createRoot: Renders App to index html file
  */
-ReactDOM.render(<App />, document.querySelector('#root'));
+
+ReactDOM.createRoot(document.querySelector('#root')).render(<App />);
