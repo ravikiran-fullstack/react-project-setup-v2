@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":";;;AAAA;EACE;AACF,C","sources":["webpack://react-setup-v2/./src/main.scss"],"sourcesContent":[".helloWorld {\r\n  color: rgb(175, 0, 255);\r\n}"],"names":[],"sourceRoot":""}
