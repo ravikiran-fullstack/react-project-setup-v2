@@ -12,6 +12,15 @@
     "lint:fix": "eslint ./src --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,json,md}' --config ./.prettierrc"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,html,md}' --config ./.prettierrc",
+      "eslint ./src --fix --max-warnings 0"
+    ],
+    "*.{json,css,scss,html,md}": [
+      "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,html,md}' --config ./.prettierrc"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -32,6 +41,8 @@
     "eslint-plugin-react": "^7.33.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "mini-css-extract-plugin": "^2.7.6",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
